@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { About, Contact, Header, Hero, Projects } from "@/components";
+import { About, Comments, Contact, Header, Hero, Projects } from "@/components";
 import BGSpiral from "../../public/bg_spiral.png";
 import Image from "next/image";
 
@@ -12,16 +12,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="flex flex-col space-y-12 relative">
+      <section className="flex flex-col space-y-12 relative overflow-hidden">
         {/* Header */}
         <Header />
-        <div className="flex flex-col space-y-12">
+        <div className="flex flex-col space-y-12 pb-20">
           {/* Hero */}
           <Hero />
           {/* Projects */}
           <Projects />
           {/* About */}
           <About />
+          {/* Comments */}
+          <Comments />
           {/* Contact */}
           <Contact />
         </div>
