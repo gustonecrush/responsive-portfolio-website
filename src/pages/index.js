@@ -24,7 +24,7 @@ export default function Home() {
           src={BGSpiral}
           width={847.18}
           height={850.42}
-          className="absolute top-0 right-0 -z-10"
+          className="absolute top-0 right-0 -z-10 animate-pulse"
           alt="Decoration spiral background"
         />
       </section>

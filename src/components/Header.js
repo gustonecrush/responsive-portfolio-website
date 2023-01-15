@@ -61,9 +61,9 @@ function Header() {
         {/* Social Media and CV Section */}
         <div className="flex flex-row items-center space-x-6">
           {/* Section Socials Media */}
-          <ul className="sm:hidden xl:flex xl:flex-row xl:space-x-6">
+          <ul className="hidden xl:flex xl:flex-row xl:space-x-6">
             {socials.map((social, index) => (
-              <li key={index} className="">
+              <li key={index} className="hover:animate-bounce p-2">
                 <Link href={social.href}>
                   <Image
                     src={social.icon}
@@ -87,7 +87,7 @@ function Header() {
             <Image
               src={Menu}
               alt={"Menu"}
-              className="md:hidden"
+              className="md:hidden cursor-pointer hover:animate-pulse"
               width={30}
               height={30}
             />
