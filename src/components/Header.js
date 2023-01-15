@@ -48,10 +48,10 @@ function Header() {
 
           {/* Menu Section */}
           <nav className="hidden md:flex">
-            <ul className="flex flex-row justify-evenly space-x-2">
+            <ul className="flex flex-row justify-evenly space-x-2 transition-all duration-1000">
               {menus.map((menu, index) => (
-                <li className="text-text py-2 px-3 font-regular" key={index}>
-                  <Link href={menu.href}>{menu.text}</Link>
+                <li className="text-text py-2 px-3 group font-regular" key={index}>
+                  <Link href={menu.href} className="group-hover:text-brand">{menu.text}</Link>
                 </li>
               ))}
             </ul>

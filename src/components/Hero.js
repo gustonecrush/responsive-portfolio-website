@@ -25,11 +25,18 @@ function Hero() {
         <ul className="">
           {texts.map((item, index) => (
             <li
-              className="text-7xl text-text flex flex-row leading-[102%] font-[300]"
+              className="text-5xl md:text-7xl text-text flex flex-row leading-[102%] font-[300]"
               key={index}
             >
-              {item.text}{" "}
-              {item?.icon && <Image src={item?.icon} width={56} height={56} />}
+              {item.text}
+              {item?.icon && (
+                <Image
+                  src={item?.icon}
+                  width={56}
+                  height={56}
+                  alt={item.text}
+                />
+              )}
             </li>
           ))}
         </ul>
@@ -41,15 +48,15 @@ function Hero() {
             languages and multi platforms.
           </p>
 
-          <div className="flex flex-row space-x-6 items-center">
-            <Link href="/download-cv">
+          <div className="flex flex-row space-x-6 items-center group">
+            <Link href="/download-cv" className="group-hover:animate-pulse">
               <button className="font-regular bg-brand border-[1px] px-6 py-2 rounded-full leading-[160%] border-brand text-[#FFF]">
                 Start Learn
               </button>
             </Link>
 
             {/* Section Socials Media */}
-            <ul className="flex space-x-8 md:absolute md:right-0 md:px-4 md:bottom-0 xl:hidden md:flex-col md:space-y-6 md:space-x-0">
+            <ul className="flex space-x-6 md:absolute md:right-0 md:px-4 md:bottom-0 xl:hidden md:flex-col md:space-y-6 md:space-x-0">
               {socials.map((social, index) => (
                 <li key={index} className="">
                   <Link href={social.href}>
