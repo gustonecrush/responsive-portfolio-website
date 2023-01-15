@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { About, Header, Hero, Projects } from "@/components";
+import { About, Contact, Header, Hero, Projects } from "@/components";
 import BGSpiral from "../../public/bg_spiral.png";
 import Image from "next/image";
 
@@ -22,6 +22,8 @@ export default function Home() {
           <Projects />
           {/* About */}
           <About />
+          {/* Contact */}
+          <Contact />
         </div>
 
         <Image

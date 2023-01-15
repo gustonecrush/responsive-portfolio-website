@@ -38,7 +38,7 @@ function About() {
         src={BGSpiral}
         width={847.18}
         height={850.42}
-        className="absolute rotate-180 top-0 left-0 -z-10 animate-pulse"
+        className="absolute xl:rotate-180 top-0 right-0 xl:left-0 -z-10 animate-pulse"
         alt="Decoration spiral background"
       />
     </div>
