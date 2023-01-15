@@ -13,7 +13,7 @@ If you want to run in your local do the steps below :
 - Then, you can run command `npm run dev` or `yarn run dev` to start your next js server and see how it works
 
 ## DESIGN
-- You can download free the UI/UX Design to Slicing this responsive portfolio website to DIY in <a href="https://www.figma.com/@cuunoong">Figma @cuunoong</a>
+- You can download free the UI/UX Design to Slicing this responsive portfolio website to DIY in <a href="https://www.figma.com/@cuunoong">Figma @cuunoong</a>. Thanks for providing free design so we're as developer is so nicely to practice in creating the app.
 
 ## RESULT
 
