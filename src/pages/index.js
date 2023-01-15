@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header, Hero, Projects } from "@/components";
+import { About, Header, Hero, Projects } from "@/components";
 import BGSpiral from "../../public/bg_spiral.png";
 import Image from "next/image";
 
@@ -18,7 +18,10 @@ export default function Home() {
         <div className="flex flex-col space-y-12">
           {/* Hero */}
           <Hero />
+          {/* Projects */}
           <Projects />
+          {/* About */}
+          <About />
         </div>
 
         <Image

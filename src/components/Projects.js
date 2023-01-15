@@ -1,4 +1,5 @@
-import { FlutterIcon, TailwindIcon, BootstrapIcon, AndroidIcon } from "public";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Card from "./Card";
 
@@ -73,12 +74,18 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col items-center space-y-8">
       <div className="py-3 md:py-4 px-4 mx-auto grid grid-cols-1 gap-9 md:grid-cols-2 xl:grid-cols-3 auto-rows-auto md:max-w-3xl xl:max-w-7xl relative">
         {projects.map((project, index) => (
           <Card project={project} />
         ))}
       </div>
+
+      <Link href="/download-cv">
+        <button className="text-text hover:bg-brand hover:text-[#FFF] transition-all font-regular border-[1px] px-6 py-2 rounded-full leading-[160%] border-brand">
+          Load More
+        </button>
+      </Link>
     </div>
   );
 }
