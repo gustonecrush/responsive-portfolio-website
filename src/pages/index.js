@@ -1,5 +1,7 @@
 import Head from "next/head";
-import { Header } from "@/components";
+import { Header, Hero } from "@/components";
+import BGSpiral from "../../public/bg_spiral.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,9 +12,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <>
+      <section className="flex flex-col space-y-12 relative">
+        {/* Header */}
         <Header />
-      </>
+        <div className="">
+          {/* Hero */}
+          <Hero />
+        </div>
+
+        <Image
+          src={BGSpiral}
+          width={847.18}
+          height={850.42}
+          className="absolute top-0 right-0 -z-10"
+          alt="Decoration spiral background"
+        />
+      </section>
     </>
   );
 }
